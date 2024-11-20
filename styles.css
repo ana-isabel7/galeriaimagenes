@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    /* text-align: center; */
+    font-size: 1rem;
+    padding-left: 170px;
+    background-color: rgb(194, 190, 190);
+}
+
+h1{
+    font-size: 2rem;
+    color: darkslateblue;
+    text-align: center;
+    padding-right: 150px;
+    margin-top: 10px;
+}
+
+section{
+    display: flex;
+    margin: 30px 30px 30px 30px;
+    border: 3px solid #ccc;
+    box-shadow: 2px 2px 5px rgba (0, 0, 0, 0.3);
+    width: 900px;
+    height: 500px;
+    text-align: center;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 2;
+    filter: contrast(120%);
+}
+
+/* mediaqueries */
+/* Habría que adaptarle el responsive porque no queda bien para móviles */
+
+@media (max-width:768px) {
+    body{
+        background-color: beige;
+    }
+    h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+
+    }
+    img{
+        display: block;
+        padding: 5px 5px;
+        text-align: center;
+        max-width: 90%;
+        height: auto;
+    }
+}
